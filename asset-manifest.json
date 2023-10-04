@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_upd/static/css/main.0ad2d73a.css",
-    "main.js": "/portfolio_upd/static/js/main.274e1141.js",
+    "main.js": "/portfolio_upd/static/js/main.20d668e9.js",
     "static/js/787.2597cdad.chunk.js": "/portfolio_upd/static/js/787.2597cdad.chunk.js",
     "static/media/keresverse.jpg": "/portfolio_upd/static/media/keresverse.1da6feff43a4bacae971.jpg",
     "static/media/GoaExcursions.jpg": "/portfolio_upd/static/media/GoaExcursions.7a95d58c282908d9ac8a.jpg",
@@ -30,11 +30,11 @@
     "static/media/close.png": "/portfolio_upd/static/media/close.008b33675c2ecd943328.png",
     "index.html": "/portfolio_upd/index.html",
     "main.0ad2d73a.css.map": "/portfolio_upd/static/css/main.0ad2d73a.css.map",
-    "main.274e1141.js.map": "/portfolio_upd/static/js/main.274e1141.js.map",
+    "main.20d668e9.js.map": "/portfolio_upd/static/js/main.20d668e9.js.map",
     "787.2597cdad.chunk.js.map": "/portfolio_upd/static/js/787.2597cdad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ad2d73a.css",
-    "static/js/main.274e1141.js"
+    "static/js/main.20d668e9.js"
   ]
 }
