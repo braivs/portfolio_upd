@@ -8,7 +8,7 @@ import {CV} from "./components/CV/CV"
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Portfolio />,
     },
     // {
