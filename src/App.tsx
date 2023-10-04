@@ -11,10 +11,10 @@ function App() {
       path: "/",
       element: <Portfolio />,
     },
-    // {
-    //   path: '/cv',
-    //   element: <CV />,
-    // },
+    {
+      path: '/cv',
+      element: <CV />,
+    },
   ])
   return (
     <div className={s.app}>
