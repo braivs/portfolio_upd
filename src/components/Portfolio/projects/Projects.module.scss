@@ -1,0 +1,95 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.projectsBlock {
+    @include block($bgColor);
+
+    .projectsContainer {
+        @include container();
+        @include flex(column, space-between, center, nowrap);
+
+        .projects {
+            @include flex(row, space-between, stretch, nowrap);
+            margin-top: 30px;
+            width: 100%;
+
+            .tabs {
+                @include flex(column, center, center, nowrap);
+                width: 100%;
+
+                .tabsContent {
+                    width: 100%;
+
+                    .tabElement {
+                        @include flex(row, space-between, stretch, wrap);
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .projectsBlock {
+        .projectsContainer {
+            .projects {
+                .tabs {
+                    .tabsContent {
+                        .tabElement {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .projectsBlock {
+        .projectsContainer {
+            .projects {
+                .tabs {
+                    .tabsContent {
+                        .tabElement {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .projectsBlock {
+        .projectsContainer {
+            .projects {
+                .tabs {
+                    .tabsContent {
+                        .tabElement {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .projectsBlock {
+        .projectsContainer {
+            .projects {
+                .tabs {
+
+                    .tabsContent {
+                        @include flex(row, center, stretch, nowrap);
+
+                        .tabElement {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

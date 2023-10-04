@@ -1,0 +1,29 @@
+@import './common/styles/sass/variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  &::selection {
+    color: white;
+    background: $primaryColor;
+  }
+}
+
+body {
+  font-family: $textFontFamily;
+  color: $textColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#tsparticles {
+  height: 100vh;
+  position: absolute;
+}

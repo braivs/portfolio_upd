@@ -1,0 +1,78 @@
+@import '../../../../common/styles/sass/mixins';
+
+.skill {
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    @include flex(column, center, center, nowrap);
+
+    .imgContainer {
+        width: 65px;
+        height: 65px;
+        @include flex(row, center, center, nowrap);
+        //border: 1px solid red;
+        img {
+            width: 53px;
+            height: auto;
+            //border: 1px solid brown;
+
+        }
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .skill {
+
+        img {
+        }
+
+        p {
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .skill {
+
+        img {
+        }
+
+        p {
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .skill {
+        width: 150px;
+
+        img {
+        }
+
+        p {
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .skill {
+        width: 93px;
+        height: 100px;
+        padding: 15px;
+        font-size: 13px;
+        @include flex(column, space-between, center, nowrap);
+
+        img {
+            width: 40px;
+
+        }
+
+        p {
+        }
+    }
+}

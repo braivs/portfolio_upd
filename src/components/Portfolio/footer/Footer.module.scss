@@ -1,0 +1,15 @@
+@import '../../../common/styles/sass/mixins';
+
+.footerBlock {
+    background-color: #111418;
+    padding: 66px 0;
+
+    .footerContainer {
+        @include container();
+        @include flex(row, center, stretch, nowrap);
+
+        p {
+            color: white;
+        }
+    }
+}

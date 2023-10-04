@@ -1,0 +1,102 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.contactsBlock {
+    @include block($primaryColor);
+
+    .titleAdditionalStyle {
+        color: red;
+    }
+
+    .contactContainer {
+        @include container();
+        @include flex(column, flex-end, center, nowrap);
+
+        .contacts {
+            @include flex(column, flex-end, center, nowrap);
+
+            form {
+                @include flex(column, space-between, stretch, nowrap);
+                width: 660px;
+
+                label {
+                    margin-bottom: 8px;
+                    margin-top: 24px;
+                }
+
+                input, textarea {
+                    background-color: $primaryColor;
+                    border: none;
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+                    font-size: 21px;
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 2px solid $textColor;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                }
+
+                // autofill color for email
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                    transition: background-color 5000s ease-in-out 0s;
+                }
+
+                button {
+                    font-size: 16px;
+                    font-family: $textFontFamily;
+                    cursor: pointer;
+                    width: 162px;
+                    height: 54px;
+                    border: none;
+                    background-color: $textColor;
+                    color: white;
+                    margin-top: 24px;
+                    transition: all 0.5s ease;
+
+                    span {
+                        margin-left: 16px;
+                    }
+
+                    &:hover {
+                        background-color: #1C1F24;
+                        box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+                    }
+                }
+            }
+
+            .social {
+                @include flex(row, center, stretch, wrap);
+                margin-top: 48px;
+            }
+        }
+    }
+
+    /*    @media screen and (max-width: $lg) {
+            .contactContainer {
+                .contacts {
+                    form {
+                        width: 60%;
+                    }
+                }
+            }
+        }*/
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .contactsBlock {
+        .contactContainer {
+            .contacts {
+                form {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.main {
+    height: 100vh;
+    background-color: $primaryColor;
+    position: relative;
+
+    .particles {
+        opacity: 0.7;
+    }
+
+    .mainBlock {
+        @include container();
+        @include flex(row, space-between, center, nowrap);
+
+        .text {
+            min-width: 50%;
+            z-index: 1;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 300;
+            }
+
+            h2 {
+                font-size: 90px;
+                font-weight: 600;
+
+
+            }
+
+            h3 {
+                font-size: 21px;
+                font-weight: 300;
+            }
+        }
+
+        .cV_Photo {
+            .cv {
+                margin-right: 20px;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                //border: 15px solid white;
+                background-color: white;
+                transition: 0.2s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 38px;
+                cursor: pointer;
+                text-align: center;
+                line-height: 1;
+
+                &:hover {
+                    border: 15px solid $primaryColor;
+
+                }
+            }
+            .imgBlock {
+                z-index: 1;
+
+                img {
+                    width: 400px;
+                    border-radius: 50%;
+                    border: 15px solid white;
+                    background-color: white;
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .main {
+        .particles {
+        }
+
+        .mainBlock {
+            .text {
+                h1 {
+                    font-size: 45px;
+                }
+
+                h2 {
+                    font-size: 75px;
+                }
+
+                p {
+
+                }
+            }
+
+            .cV_Photo {
+                .cv {
+                    width: 120px;
+                    height: 120px;
+                    font-size: 30px;
+                }
+
+                .imgBlock {
+                    img {
+                        width: 300px;
+                    }
+                }
+                .imgBlock {
+                    img {
+                        width: 350px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .main {
+        .particles {
+        }
+
+        .mainBlock {
+            .text {
+                h1 {
+                    font-size: 40px;
+                }
+
+                h2 {
+                    font-size: 63px;
+                }
+
+                p {
+
+                }
+            }
+
+            .cV_Photo {
+                .imgBlock {
+                    img {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .main {
+        padding-top: 100px;
+
+        .particles {
+        }
+
+        .mainBlock {
+            @include flex(column, center, center, nowrap);
+
+            .text {
+                margin-bottom: 30px;
+                h1 {
+                    font-size: 30px;
+                }
+
+                h2 {
+                    font-size: 50px;
+                }
+
+                p {
+
+                }
+            }
+
+            .cV_Photo {
+                .imgBlock {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .main {
+        padding-top: 105px;
+        .particles {
+        }
+
+        .mainBlock {
+            .text {
+                h1 {
+                    font-size: 23px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                p {
+
+                }
+            }
+
+            .cV_Photo {
+                .imgBlock {
+                    img {
+                        //width: 100px;
+
+                    }
+                }
+            }
+
+        }
+    }
+}

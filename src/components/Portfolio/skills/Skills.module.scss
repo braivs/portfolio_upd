@@ -1,0 +1,81 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.skillsBlock {
+    @include block($bgSecondColor);
+
+    .skillsContainer {
+        @include container();
+        @include flex(column, center, center, nowrap);
+        //display: grid;
+
+        .skills {
+            margin-top: 30px;
+            @include flex(row, space-between, stretch, wrap);
+
+            /*width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, auto);*/
+            //border: 1px solid red;
+        }
+    }
+
+    /*@media screen and (max-width: $lg) {
+        .skillsContainer {
+            .skills {
+                @include flex(column, center, center, nowrap);
+            }
+        }
+    }*/
+
+}
+
+@media only screen and (max-width: 1800px) { // 1536px - 1800px
+    .skillsBlock {
+
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1536px) { // 1200px - 1536px
+    .skillsBlock {
+        padding: 64px 0;
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) { // 600px - 1200px
+    .skillsBlock {
+
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) { // 350px - 600px
+    .skillsBlock {
+        grid-gap: 20px;
+        .skillsContainer {
+
+            .skills {
+
+            }
+        }
+    }
+}
+
+

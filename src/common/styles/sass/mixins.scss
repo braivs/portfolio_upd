@@ -1,0 +1,46 @@
+@import './variables';
+
+@mixin text($fontFamily, $fontSize, $lineHeight) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $textColor;
+}
+
+@mixin container() {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1536px) { // 1200px - 1536px
+        width: 80%;
+    }
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-wrap: $wrap;
+    /*@media screen and (max-width: $sm) {
+        justify-content: center;
+    }*/
+}
+
+@mixin bgSettings() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin block($backgroundColor) {
+    background-color: $backgroundColor;
+    padding: 104px 0;
+
+    @media only screen and (max-width: 1536px) { // 1200px - 1536px
+        padding: 64px 0;
+    }
+
+}
+

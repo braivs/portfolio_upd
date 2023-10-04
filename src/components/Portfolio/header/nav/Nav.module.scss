@@ -1,0 +1,29 @@
+@import '../../../../common/styles/sass/variables';
+@import '../../../../common/styles/sass/mixins';
+
+
+.nav {
+    width: 400px;
+    @include flex(row, space-between, stretch, nowrap);
+
+    a {
+        color: $textColor;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 20px;
+
+        &:hover {
+            color: $bgSecondColor;
+        }
+
+
+    }
+    .active {
+        color: $bgSecondColor;
+    }
+    @media screen and (max-width: 600px) {
+        display: none;
+
+    }
+}

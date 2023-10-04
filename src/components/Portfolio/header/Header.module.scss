@@ -1,0 +1,21 @@
+@import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
+
+.header {
+    @include flex(row, flex-end, center, nowrap);
+    height: 80px;
+    background-color: $primaryColor;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+
+    .headerContainer {
+        @include container();
+        @include flex(row, flex-end, center, nowrap);
+    }
+
+    /*@media screen and (max-width: 400px) {
+        height: 90px;
+
+    }*/
+}
